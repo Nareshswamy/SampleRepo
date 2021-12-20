@@ -87,6 +87,13 @@
     <version>2.6.12</version>
 </dependency>
    
+<dependency>
+    <groupId>io.github.bonigarcia</groupId>
+    <artifactId>webdrivermanager</artifactId>
+    <version>3.5.0</version>
+</dependency>
+   
+     
   </dependencies>
   
 </project>
