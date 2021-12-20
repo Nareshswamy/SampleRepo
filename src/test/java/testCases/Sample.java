@@ -1,7 +1,7 @@
 package testCases;
 
 import java.util.concurrent.TimeUnit;
-
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -15,7 +15,8 @@ public class Sample {
 	
 	@BeforeTest
 	public void SetUp() throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+		//System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+		WebDriverManager.chromedriver().setup();
 		driver =  new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://demo.opencart.com/");
