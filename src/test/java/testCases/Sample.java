@@ -5,6 +5,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -15,9 +16,11 @@ public class Sample {
 	
 	@BeforeTest
 	public void SetUp() throws InterruptedException {
-		//System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
-		WebDriverManager.chromedriver().setup();
-		driver =  new ChromeDriver();
+		System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
+		//WebDriverManager.chromedriver().setup();
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--headless");
+		driver =  new ChromeDriver(options);
 		driver.manage().window().maximize();
 		driver.get("https://demo.opencart.com/");
 		Thread.sleep(3000);
