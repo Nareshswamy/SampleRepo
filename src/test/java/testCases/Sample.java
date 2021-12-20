@@ -16,7 +16,7 @@ public class Sample {
 	
 	@BeforeTest
 	public void SetUp() throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver", "/usr/local/bin");
+		System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
 		//WebDriverManager.chromedriver().setup();
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--headless");
