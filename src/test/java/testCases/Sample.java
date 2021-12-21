@@ -33,12 +33,13 @@ public class Sample {
 		driver.findElement(By.linkText("Register")).click();
 		driver.findElement(By.xpath("//input[@id='input-firstname']")).sendKeys("Naresh");
 		driver.findElement(By.xpath("//input[@id='input-lastname']")).sendKeys("swamy");
-		driver.findElement(By.xpath("//input[@id='input-email']")).sendKeys("swamy@114@gmail.com");
+		driver.findElement(By.xpath("//input[@id='input-email']")).sendKeys("johnwick21@gmail.com");
 		driver.findElement(By.xpath("//input[@id='input-telephone']")).sendKeys("8855488524");
 		driver.findElement(By.xpath("//input[@id='input-password']")).sendKeys("swamy@114");
 		driver.findElement(By.xpath("//input[@id='input-confirm']")).sendKeys("swamy@114");
 		driver.findElement(By.xpath("//input[@type='checkbox']")).click();
 		driver.findElement(By.xpath("//input[@type='submit']")).click();
+		System.out.println((driver.findElement(By.xpath("//div[@class='alert alert-danger alert-dismissible']")).getText()));
 		driver.close();
 	}
 	
@@ -47,12 +48,13 @@ public class Sample {
 		driver.findElement(By.linkText("Register")).click();
 		driver.findElement(By.xpath("//input[@id='input-firstname']")).sendKeys("Naresh");
 		driver.findElement(By.xpath("//input[@id='input-lastname']")).sendKeys("swamy");
-		driver.findElement(By.xpath("//input[@id='input-email']")).sendKeys("swamy@114@gmail.com");
+		driver.findElement(By.xpath("//input[@id='input-email']")).sendKeys("johnwick21@gmail.com");
 		driver.findElement(By.xpath("//input[@id='input-telephone']")).sendKeys("8855488524");
 		driver.findElement(By.xpath("//input[@id='input-password']")).sendKeys("swamy@114");
 		driver.findElement(By.xpath("//input[@id='input-confirm']")).sendKeys("swamy@114");
 		driver.findElement(By.xpath("//input[@type='checkbox']")).click();
 		driver.findElement(By.xpath("//input[@type='submit']")).click();
+		System.out.println((driver.findElement(By.xpath("//div[@class='alert alert-danger alert-dismissible']")).getText()));
 		driver.close();
 	}
 	
@@ -61,12 +63,13 @@ public class Sample {
 		driver.findElement(By.linkText("Register")).click();
 		driver.findElement(By.xpath("//input[@id='input-firstname']")).sendKeys("Naresh");
 		driver.findElement(By.xpath("//input[@id='input-lastname']")).sendKeys("swamy");
-		driver.findElement(By.xpath("//input[@id='input-email']")).sendKeys("swamy@114@gmail.com");
+		driver.findElement(By.xpath("//input[@id='input-email']")).sendKeys("johnwick21@gmail.com");
 		driver.findElement(By.xpath("//input[@id='input-telephone']")).sendKeys("8855488524");
 		driver.findElement(By.xpath("//input[@id='input-password']")).sendKeys("swamy@114");
 		driver.findElement(By.xpath("//input[@id='input-confirm']")).sendKeys("swamy@114");
 		driver.findElement(By.xpath("//input[@type='checkbox']")).click();
 		driver.findElement(By.xpath("//input[@type='submit']")).click();
+		System.out.println((driver.findElement(By.xpath("//div[@class='alert alert-danger alert-dismissible']")).getText()));
 		driver.close();
 	}
 	
