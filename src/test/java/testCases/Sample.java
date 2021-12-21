@@ -31,7 +31,7 @@ public class Sample {
 	public void Testcase1() { 
 		driver.findElement(By.linkText("My Account")).click();
 		driver.findElement(By.linkText("Register")).click();
-		driver.findElement(By.xpath("//input[@id='input-firstname']")).sendKeys("Naresh");
+		driver.findElement(By.xpath("//input[@i='input-firstname']")).sendKeys("Naresh");
 		driver.findElement(By.xpath("//input[@id='input-lastname']")).sendKeys("swamy");
 		driver.findElement(By.xpath("//input[@id='input-email']")).sendKeys("johnwick21@gmail.com");
 		driver.findElement(By.xpath("//input[@id='input-telephone']")).sendKeys("8855488524");
