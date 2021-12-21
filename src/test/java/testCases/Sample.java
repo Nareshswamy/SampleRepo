@@ -20,7 +20,7 @@ public class Sample {
 		//WebDriverManager.chromedriver().setup();
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--headless");
-		options.addArguments('--no-sandbox');
+		options.addArguments("--no-sandbox");
 		driver =  new ChromeDriver(options);
 		driver.manage().window().maximize();
 		driver.get("https://demo.opencart.com/");
